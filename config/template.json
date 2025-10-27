@@ -1,0 +1,37 @@
+{
+    "Communication": {
+        "question": "How well did the candidate communicate?",
+        "description": "Assess clarity, tone, articulation, and ability to express complex ideas clearly and concisely. Look for active listening and confidence in dialogue.",
+        "initial_assessment": ""
+    },
+    "Language Proficiency": {
+        "question": "How proficient is the candidate in the required language(s)?",
+        "description": "Evaluate grammar, vocabulary, fluency, and comprehension during both technical and general conversation.",
+        "initial_assessment": ""
+    },
+    "Soft Skills": {
+        "question": "How well did the candidate demonstrate interpersonal and behavioral skills?",
+        "description": "Assess emotional intelligence, teamwork, adaptability, empathy, and professional attitude throughout the interview.",
+        "initial_assessment": ""
+    },
+    "Technical Acumen": {
+        "question": "How strong is the candidate technical knowledge and practical understanding?",
+        "description": "Evaluate understanding of core concepts, tools, and technologies relevant to the position. Include examples of applied technical reasoning.",
+        "initial_assessment": ""
+    },
+    "Problem Solving": {
+        "question": "How effectively did the candidate approach and solve problems?",
+        "description": "Assess logical reasoning, creativity, debugging skills, and ability to decompose complex issues into manageable parts. Focus on structured thinking.",
+        "initial_assessment": ""
+    },
+    "Experience Level": {
+        "question": "How does the candidate past experience align with the role?",
+        "description": "Review professional history, domain relevance, project exposure, and ability to leverage prior experience in this context.",
+        "initial_assessment": ""
+    },
+    "Cultural Fit": {
+        "question": "How well does the candidate align with the company culture and values?",
+        "description": "Assess alignment with organizational principles, collaboration style, motivation, and long-term fit with the company environment.",
+        "initial_assessment": ""
+    }
+}

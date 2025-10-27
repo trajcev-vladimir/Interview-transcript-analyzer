@@ -1,0 +1,24 @@
+llm:
+  base_url: "https://litellm.ai.paas.htec.rs"
+  model: "l2-gpt-4.1"
+  temperature: 0.2
+  max_tokens: 500
+
+pipeline:
+  confidence_threshold: 0.7
+  criteria_list:
+    - Communication
+    - Language Proficiency
+    - Soft Skills
+    - Technical Acumen
+    - Problem Solving
+    - Experience Level
+    - Cultural Fit
+
+rag:
+  data_dir: "../data/synthetic_transcripts"
+  storage_dir: "../data/rag_storage"
+  embed_model: "BAAI/bge-small-en-v1.5"
+  llm_model: "l2-gpt-4.1"
+  rebuild_index: yes
+  temperature: 0.2
