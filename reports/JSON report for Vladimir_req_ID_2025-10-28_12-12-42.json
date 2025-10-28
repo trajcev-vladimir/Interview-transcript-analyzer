@@ -1,0 +1,37 @@
+{
+    "Communication": {
+        "question": "How well did the candidate communicate?",
+        "description": "Assess clarity, tone, articulation, and ability to express complex ideas clearly and concisely. Look for active listening and confidence in dialogue.",
+        "initial_assessment": "The candidate communicated effectively throughout the interview, demonstrating clarity, concise articulation, and a confident tone. They expressed complex technical concepts in a straightforward manner, using concrete examples and outcomes to support their points. Their responses were well-structured, and they actively engaged with the interviewer, asking thoughtful questions and showing genuine interest. There was evidence of active listening and adaptability in dialogue, though some minor lapses in grammar and flow were present. Overall, the candidate conveyed ideas clearly and maintained a professional, collaborative demeanor."
+    },
+    "Language Proficiency": {
+        "question": "How proficient is the candidate in the required language(s)?",
+        "description": "Evaluate grammar, vocabulary, fluency, and comprehension during both technical and general conversation.",
+        "initial_assessment": "The candidate demonstrates strong proficiency in English, with clear and concise responses throughout both technical and general conversation. Grammar is generally solid, though there are minor lapses in sentence structure and some informal phrasing. Vocabulary is appropriate for a technical setting, with effective use of domain-specific terms (e.g., 'CI pipelines', 'exponential backoff', 'threat-modeling'). Fluency is high, as the candidate answers questions smoothly and with logical progression. Comprehension is excellent, as evidenced by relevant, detailed answers to each question. Minor issues include occasional missing articles, informal transitions, and some run-on sentences, but these do not impede understanding."
+    },
+    "Soft Skills": {
+        "question": "How well did the candidate demonstrate interpersonal and behavioral skills?",
+        "description": "Assess emotional intelligence, teamwork, adaptability, empathy, and professional attitude throughout the interview.",
+        "initial_assessment": "The candidate consistently demonstrated strong interpersonal and behavioral skills throughout the interview. They showed high emotional intelligence by focusing on team improvements, learning from mistakes, and maintaining a collaborative, non-blaming attitude during incidents and disagreements. Their responses reflected adaptability, empathy for users and teammates, and a professional, constructive approach to challenges. The candidate also asked thoughtful questions about team collaboration and culture, indicating genuine interest in teamwork and continuous improvement."
+    },
+    "Technical Acumen": {
+        "question": "How strong is the candidate technical knowledge and practical understanding?",
+        "description": "Evaluate understanding of core concepts, tools, and technologies relevant to the position. Include examples of applied technical reasoning.",
+        "initial_assessment": "The candidate demonstrates strong technical knowledge and practical understanding across core concepts relevant to development, operations, and cloud infrastructure. Their responses show hands-on experience with CI/CD, incident response, performance optimization, testing strategies, security, and system design for scalability and reliability. They consistently provide concrete examples of applied reasoning, tradeoff analysis, and measurable outcomes, indicating both depth and breadth of expertise."
+    },
+    "Problem Solving": {
+        "question": "How effectively did the candidate approach and solve problems?",
+        "description": "Assess logical reasoning, creativity, debugging skills, and ability to decompose complex issues into manageable parts. Focus on structured thinking.",
+        "initial_assessment": "The candidate demonstrated strong structured thinking and problem-solving skills throughout the interview. They consistently approached issues by first identifying root causes (profiling, logging, metrics), decomposing complex problems into manageable steps (e.g., breaking down testing strategy, debugging memory leaks), and considering tradeoffs in their solutions. Their logical reasoning was evident in their methodical approach to debugging, performance optimization, and incident response. Creativity was shown in their proactive improvements to CI pipelines and knowledge-sharing initiatives. The candidate also displayed an ability to balance speed and quality, and to communicate technical decisions clearly, which are hallmarks of effective problem solvers at a senior level."
+    },
+    "Experience Level": {
+        "question": "How does the candidate past experience align with the role?",
+        "description": "Review professional history, domain relevance, project exposure, and ability to leverage prior experience in this context.",
+        "initial_assessment": "The candidate's past experience aligns strongly with the requirements of a role focused on DevOps, backend engineering, or site reliability. They demonstrate hands-on expertise in improving CI pipelines, deployment processes, and system reliability\u2014core aspects of modern engineering teams. Their project exposure covers both technical problem-solving (e.g., debugging memory issues, optimizing API performance, handling incidents) and process improvements (e.g., testing strategies, code quality, knowledge sharing). The candidate also shows an ability to leverage prior experience in cloud services (AWS, Lambda, EKS, DynamoDB), security best practices, and system design for scalability and reliability. Their approach to learning new technologies and handling team disagreements further indicates adaptability and strong collaboration skills, which are valuable in dynamic engineering environments."
+    },
+    "Cultural Fit": {
+        "question": "How well does the candidate align with the company culture and values?",
+        "description": "Assess alignment with organizational principles, collaboration style, motivation, and long-term fit with the company environment.",
+        "initial_assessment": "The candidate demonstrates strong alignment with the company's likely culture and values, showing a collaborative, pragmatic, and improvement-focused mindset. They emphasize teamwork, healthy disagreement resolution, and knowledge sharing, which are key for a positive organizational environment. Their motivation centers on solving impactful problems, improving processes, and learning continuously, suggesting a good long-term fit. The candidate also proactively considers tradeoffs, security, and system reliability, aligning with principles of ownership and quality. Their questions about engineering/product collaboration and balancing tech debt show genuine interest in the company's ways of working and values."
+    }
+}

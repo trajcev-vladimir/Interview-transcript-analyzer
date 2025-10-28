@@ -1,0 +1,78 @@
+2025-10-28 11:37:05 Starting transcript preprocessing...
+2025-10-28 11:37:19 Preprocessing complete.
+2025-10-28 11:37:19 Evaluating category: ---------------Communication---------------
+2025-10-28 11:37:19 Extract category question and description for Communication criteria
+2025-10-28 11:37:23 Successful LLM response for Communication criteria
+2025-10-28 11:37:23 Successful parsed LLM response for Communication criteria
+2025-10-28 11:37:23 Low confidence (65) detected for Communication. -----Invoking RAG-----...
+2025-10-28 11:37:31 Similar cases for Communication returned
+2025-10-28 11:37:33 Successful LLM summarize similar cases for Communication
+2025-10-28 11:37:35 Successful refined LLM response for Communication
+2025-10-28 11:37:35 Confidence after RAG 75
+2025-10-28 11:37:35 Evaluating category: ---------------Language Proficiency---------------
+2025-10-28 11:37:35 Extract category question and description for Language Proficiency criteria
+2025-10-28 11:37:37 Successful LLM response for Language Proficiency criteria
+2025-10-28 11:37:37 Successful parsed LLM response for Language Proficiency criteria
+2025-10-28 11:37:37 Successful LLM response for Language Proficiency with confidence 75%
+2025-10-28 11:37:37 Evaluating category: ---------------Soft Skills---------------
+2025-10-28 11:37:37 Extract category question and description for Soft Skills criteria
+2025-10-28 11:37:39 Successful LLM response for Soft Skills criteria
+2025-10-28 11:37:39 Successful parsed LLM response for Soft Skills criteria
+2025-10-28 11:37:39 Successful LLM response for Soft Skills with confidence 75%
+2025-10-28 11:37:39 Evaluating category: ---------------Technical Acumen---------------
+2025-10-28 11:37:39 Extract category question and description for Technical Acumen criteria
+2025-10-28 11:37:42 Successful LLM response for Technical Acumen criteria
+2025-10-28 11:37:42 Successful parsed LLM response for Technical Acumen criteria
+2025-10-28 11:37:42 Successful LLM response for Technical Acumen with confidence 80%
+2025-10-28 11:37:42 Evaluating category: ---------------Problem Solving---------------
+2025-10-28 11:37:42 Extract category question and description for Problem Solving criteria
+2025-10-28 11:37:44 Successful LLM response for Problem Solving criteria
+2025-10-28 11:37:44 Successful parsed LLM response for Problem Solving criteria
+2025-10-28 11:37:44 Successful LLM response for Problem Solving with confidence 85%
+2025-10-28 11:37:44 Evaluating category: ---------------Experience Level---------------
+2025-10-28 11:37:44 Extract category question and description for Experience Level criteria
+2025-10-28 11:37:47 Successful LLM response for Experience Level criteria
+2025-10-28 11:37:47 Successful parsed LLM response for Experience Level criteria
+2025-10-28 11:37:47 Successful LLM response for Experience Level with confidence 80%
+2025-10-28 11:37:47 Evaluating category: ---------------Cultural Fit---------------
+2025-10-28 11:37:47 Extract category question and description for Cultural Fit criteria
+2025-10-28 11:37:49 Successful LLM response for Cultural Fit criteria
+2025-10-28 11:37:49 Successful parsed LLM response for Cultural Fit criteria
+2025-10-28 11:37:49 Successful LLM response for Cultural Fit with confidence 85%
+2025-10-28 12:11:51 Starting transcript preprocessing...
+2025-10-28 12:12:23 Preprocessing complete.
+2025-10-28 12:12:23 Evaluating category: ---------------Communication---------------
+2025-10-28 12:12:23 Extract category question and description for Communication criteria
+2025-10-28 12:12:26 Successful LLM response for Communication criteria
+2025-10-28 12:12:26 Successful parsed LLM response for Communication criteria
+2025-10-28 12:12:26 Successful LLM response for Communication with confidence 87%
+2025-10-28 12:12:26 Evaluating category: ---------------Language Proficiency---------------
+2025-10-28 12:12:26 Extract category question and description for Language Proficiency criteria
+2025-10-28 12:12:28 Successful LLM response for Language Proficiency criteria
+2025-10-28 12:12:28 Successful parsed LLM response for Language Proficiency criteria
+2025-10-28 12:12:28 Successful LLM response for Language Proficiency with confidence 85%
+2025-10-28 12:12:28 Evaluating category: ---------------Soft Skills---------------
+2025-10-28 12:12:28 Extract category question and description for Soft Skills criteria
+2025-10-28 12:12:31 Successful LLM response for Soft Skills criteria
+2025-10-28 12:12:31 Successful parsed LLM response for Soft Skills criteria
+2025-10-28 12:12:31 Successful LLM response for Soft Skills with confidence 90%
+2025-10-28 12:12:31 Evaluating category: ---------------Technical Acumen---------------
+2025-10-28 12:12:31 Extract category question and description for Technical Acumen criteria
+2025-10-28 12:12:34 Successful LLM response for Technical Acumen criteria
+2025-10-28 12:12:34 Successful parsed LLM response for Technical Acumen criteria
+2025-10-28 12:12:34 Successful LLM response for Technical Acumen with confidence 90%
+2025-10-28 12:12:34 Evaluating category: ---------------Problem Solving---------------
+2025-10-28 12:12:34 Extract category question and description for Problem Solving criteria
+2025-10-28 12:12:36 Successful LLM response for Problem Solving criteria
+2025-10-28 12:12:36 Successful parsed LLM response for Problem Solving criteria
+2025-10-28 12:12:36 Successful LLM response for Problem Solving with confidence 90%
+2025-10-28 12:12:36 Evaluating category: ---------------Experience Level---------------
+2025-10-28 12:12:36 Extract category question and description for Experience Level criteria
+2025-10-28 12:12:39 Successful LLM response for Experience Level criteria
+2025-10-28 12:12:39 Successful parsed LLM response for Experience Level criteria
+2025-10-28 12:12:39 Successful LLM response for Experience Level with confidence 90%
+2025-10-28 12:12:39 Evaluating category: ---------------Cultural Fit---------------
+2025-10-28 12:12:39 Extract category question and description for Cultural Fit criteria
+2025-10-28 12:12:42 Successful LLM response for Cultural Fit criteria
+2025-10-28 12:12:42 Successful parsed LLM response for Cultural Fit criteria
+2025-10-28 12:12:42 Successful LLM response for Cultural Fit with confidence 90%
