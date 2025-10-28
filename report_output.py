@@ -20,7 +20,7 @@ class Export:
             # Fetch the question and description for a category from the json template file
             self.temp_json[crit]["initial_assessment"] = self.report[crit]["assessment"]
 
-        json_report_path=f"./reports/{self.candidate_id}_req_ID_{self.timestamp}.json"
+        json_report_path=f"./reports/JSON report for {self.candidate_id}_req_ID_{self.timestamp}.json"
 
         with open(json_report_path, "w") as e:
             json.dump(self.temp_json, e, indent=4)

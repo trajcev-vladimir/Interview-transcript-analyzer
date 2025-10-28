@@ -72,7 +72,7 @@ class Preproc:
         text = self.normalize_unicode(text)
         text = self.clean_text_basic(text)
         text = self.correct_spelling(text)
-        text = self.correct_text_with_textblob(text)
+      #  text = self.correct_text_with_textblob(text)
         text = self.tag_dialogue_segments(text)
 
         log = "Preprocessing complete."
