@@ -123,7 +123,7 @@ class EvalPipeline:
                 "assessment": refined_rationale,
                 "RAG confidence": refined_confidence,
                 "RAG supporting_excerpts": refined_supporting_excerpts,
-                "review_required": confidence < self.confidence_threshold * 100,
+                "review_required": confidence < refined_confidence * 100,
                 "rag_used": "YES",
             }
 
