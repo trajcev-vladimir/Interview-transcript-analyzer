@@ -2,7 +2,7 @@
 Interview Transcript Analyzer
 
 ## 1. Prerequests
-Requred python libraryes: 
+Requred python libraries: 
 
 openai, 
 json, 
