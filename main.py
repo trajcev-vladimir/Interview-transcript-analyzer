@@ -6,42 +6,73 @@ from pipeline import EvalPipeline
 import report_output
 from datetime import datetime
 import os
+import logging
+
+logger = logging.getLogger("main")
 
 def process_transcript(transcript_text, candidate_name, interviewer_name):
+    try:
+        # Validate Inputs
+        if candidate_name.strip() == "":
+            return "Please enter Candidate Name", None, None
+        if interviewer_name.strip() == "":
+            return "Please enter Interviewer Name", None, None
+        if not transcript_text or not transcript_text.strip():
+            return "Please upload a file or paste transcript text", None, None
 
-   # Check if all fields are filled
-    if candidate_name.strip() == "":
-        return "Please enter Candidate Name", None, None
-    if interviewer_name.strip() == "":
-        return "Please enter Interviewer Name", None, None
-    if not transcript_text.strip():
-        return "Please enter upload file or add transcript text", None, None
-    text = transcript_text.strip()
+        text = transcript_text.strip()
 
-    # Check if the Candidate name and the Interviewer name match with the names in the transcript
-    matches_can = re.findall(rf'\b{re.escape(candidate_name)}\b', text)
-    matches_int = re.findall(rf'\b{re.escape(interviewer_name)}\b', text)
+        # Validate presence of names inside transcript
+        matches_can = re.findall(rf'\b{re.escape(candidate_name)}\b', text)
+        matches_int = re.findall(rf'\b{re.escape(interviewer_name)}\b', text)
 
-    if len(matches_can) == 0:
-        return "Candidate name does not match", None, None
-    if len(matches_int) == 0:
-        return "Interviewer name does not match", None, None
+        if len(matches_can) == 0:
+            return "Candidate name does not match transcript content", None, None
+        if len(matches_int) == 0:
+            return "Interviewer name does not match transcript content", None, None
 
-    # Run the pipeline with the inputs of the transcript Candidate and Interviewer names
-    pipeline = EvalPipeline(text, candidate_name, interviewer_name)
-    report = pipeline.evaluate_transcript()
+        log = f"Evaluation started for Candidate: {candidate_name}"
+        logger.info(log), log_utils.log(log)
 
-    # Export reports
-    export_eng = report_output.Export(report, candidate_name)
-    report_url = export_eng.json_report()
-    full_report_url = export_eng.full_report()
+        # ---- Run Pipeline ----
+        try:
+            pipeline = EvalPipeline(text, candidate_name, interviewer_name)
+            report = pipeline.evaluate_transcript()
 
-    # Export logs
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    log_utils.save_logs_to_file(f"./logs/{candidate_name}_req_ID_{timestamp}.log")
+        except Exception as e:
+            logger.exception("Pipeline execution failed")
+            log_utils.log(f"Pipeline Error: {e}")
+            return f"Evaluation Failed: {str(e)}", None, None
 
-    json_data = json.dumps(report, indent=2)
-    return json_data, report_url, full_report_url
+        log = "Successful Evaluation for all criteria"
+        logger.info(log), log_utils.log(log)
+
+        # ---- Export Reports ----
+        try:
+            export_eng = report_output.Export(report, candidate_name)
+            report_url = export_eng.json_report()
+            full_report_url = export_eng.full_report()
+            log = "Reports successfully exported"
+            logger.info(log), log_utils.log(log)
+        except Exception as e:
+            logger.exception("Report export failed")
+            log_utils.log(f"Report Export Error: {e}")
+            return f"Evaluation succeeded but report export failed: {e}", None, None
+
+        # ---- Save Logs ----
+        try:
+            timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+            log_utils.save_logs_to_file(f"./logs/{candidate_name}_req_ID_{timestamp}.log")
+        except Exception as e:
+            logger.error(f"Failed saving logs: {e}")
+
+        return json.dumps(report, indent=2), report_url, full_report_url
+
+    except Exception as e:
+        # Catch any unexpected crash
+        logger.exception("Unexpected error in process_transcript")
+        log_utils.log(f"Unexpected Error: {e}")
+        return f"Critical Error: {str(e)}", None, None
 
 # Wrapper to handle file or text input
 def handle_input(file_input, transcript_text, candidate_name, interviewer_name):
@@ -70,7 +101,7 @@ with gr.Blocks(title="Candidate Evaluation Report Generator") as demo:
 
     transcript_text = gr.Textbox(label="Or Paste Transcript Text", lines=8, placeholder="Paste transcript text here...")
 
-    generate_btn = gr.Button("Generate JSON Report 🚀")
+    generate_btn = gr.Button("Generate JSON Report")
 
     json_output = gr.Code(label="Generated JSON", language="json")
     download_btn_rep = gr.File(label="Download JSON Report")

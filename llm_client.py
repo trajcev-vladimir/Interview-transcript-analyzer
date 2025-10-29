@@ -28,7 +28,7 @@ class LLMClient:
             return text
         except Exception as e:
             logger.error(f"LLM call failed: {e}")
-            return "LLM evaluation failed."
+            raise ValueError("LLM evaluation failed. LLM is not accessible.")
 
 def safe_parse_json(text: str):
     """Attempt to parse LLM output as JSON"""

@@ -43,7 +43,6 @@ class EvalPipeline:
                                         "rationale": "...",
                                         "supporting_excerpts": "...",                     
             """
-        print(f"Base prompt: {base_prompt}")
 
         # Response from the LLM
         llm_response = self.llm.run(base_prompt)
@@ -86,7 +85,6 @@ class EvalPipeline:
             rag_context = self.llm.run(summ_prompt)
             log = f"Successful LLM summarize similar cases for {crit}"
             logger.info(log), log_utils.log(log)
-            print(f"RAG summarized context: {rag_context}")
 
             # Use the summarised cases together with the transcript to get better confidence
             refinement_prompt = f"""
@@ -103,9 +101,12 @@ class EvalPipeline:
             log = f"Successful refined LLM response for {crit}"
             logger.info(log), log_utils.log(log)
 
+            # Parse the refined response in JSON to be able to fetch confidence and rationale
             parsed_refined_response = safe_parse_json(refined_llm_response)
-            logger.info(f"Refined response for {crit}: {refined_llm_response}")
+            log = f"Successful parsed the refined LLM response for {crit} criteria"
+            logger.info(log), log_utils.log(log)
 
+            # Fetch the confidence, rationale and supporting_excerpts from the refined response
             refined_confidence = parsed_refined_response.get("confidence")
             refined_rationale = parsed_refined_response.get("rationale")
             refined_supporting_excerpts = parsed_refined_response.get("supporting_excerpts")

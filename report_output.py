@@ -1,6 +1,9 @@
 import json
 import yaml
 from datetime import datetime
+import logging
+
+logger = logging.getLogger("Report_Output")
 
 class Export:
     def __init__(self, report, candidate_id, json_temp_path="./config/template.json", config_path="./config/config.yaml"):
