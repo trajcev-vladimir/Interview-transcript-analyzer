@@ -1,0 +1,37 @@
+{
+    "Communication": {
+        "question": "How well did the candidate communicate?",
+        "description": "Assess clarity, tone, articulation, and ability to express complex ideas clearly and concisely. Look for active listening and confidence in dialogue.",
+        "initial_assessment": "The candidate demonstrated a generally clear and structured communication style, consistently referencing specific technical practices such as CI pipelines, feature flags, and system stabilization strategies. They articulated complex ideas with reasonable clarity and conciseness, often outlining their process for clarifying requirements, communicating tradeoffs, and documenting findings for team collaboration. Active listening was evident in their responses, and they showed confidence when explaining technical concepts. However, there were recurring minor articulation issues, including grammatical errors ('we was doing on-call'), filler words ('Um...', 'You know...'), and occasional self-corrections ('got actually sorry I meant three years'), which slightly detracted from overall polish. Despite these minor language issues, the candidate's ability to express complex ideas and maintain a structured dialogue was strong and in line with best practices observed in similar cases."
+    },
+    "Language Proficiency": {
+        "question": "How proficient is the candidate in the required language(s)?",
+        "description": "Evaluate grammar, vocabulary, fluency, and comprehension during both technical and general conversation.",
+        "initial_assessment": "The candidate demonstrates solid comprehension and fluency in technical and general conversation, consistently responding to questions with relevant examples and explanations. Their vocabulary is appropriate for the technical context, and they are able to articulate processes, tradeoffs, and strategies clearly. However, there are noticeable grammatical errors and occasional awkward phrasing (e.g., 'my team were five peoples and we was doing on-call,' 'I reactor the code'), and some filler words ('Um...', 'Er...') that detract from overall polish. These issues suggest room for improvement in grammar and conversational smoothness, though they do not significantly impede understanding."
+    },
+    "Soft Skills": {
+        "question": "How well did the candidate demonstrate interpersonal and behavioral skills?",
+        "description": "Assess emotional intelligence, teamwork, adaptability, empathy, and professional attitude throughout the interview.",
+        "initial_assessment": "The candidate demonstrated several positive interpersonal and behavioral skills, including mentoring junior engineers, introducing pair programming, and articulating problems clearly. They showed adaptability by iterating with proofs of concept and documenting findings for team transparency. The candidate communicated tradeoffs explicitly and sought feedback, indicating openness and a collaborative attitude. However, their responses were sometimes repetitive, and there were minor communication issues (e.g., language errors, hesitations), which slightly impacted the overall impression of emotional intelligence and professionalism."
+    },
+    "Technical Acumen": {
+        "question": "How strong is the candidate technical knowledge and practical understanding?",
+        "description": "Evaluate understanding of core concepts, tools, and technologies relevant to the position. Include examples of applied technical reasoning.",
+        "initial_assessment": "The candidate demonstrates solid technical knowledge and practical understanding of core concepts relevant to the position, including integration testing, CI pipelines, strict typing, microservice design, autoscaling, rate limiting, feature flags, and incident response. They consistently mention applied reasoning such as modeling traffic patterns, optimizing queries, clarifying success metrics, and communicating tradeoffs. Their approach to system design and troubleshooting is methodical, involving dependency mapping, iterative proofs of concept, and documentation. However, some responses are repetitive and lack depth in specific technologies, and there are occasional communication lapses and minor inaccuracies (e.g., years of experience)."
+    },
+    "Problem Solving": {
+        "question": "How effectively did the candidate approach and solve problems?",
+        "description": "Assess logical reasoning, creativity, debugging skills, and ability to decompose complex issues into manageable parts. Focus on structured thinking.",
+        "initial_assessment": "The candidate demonstrates a structured and methodical approach to problem-solving, consistently referencing processes such as mapping dependencies, clarifying success metrics, and iterating with proofs of concept. They show awareness of tradeoffs, communicate them to stakeholders, and use postmortems to learn from failures. Debugging skills are evident in their use of integration tests, CI pipelines, and feature flags for safer rollouts. However, some responses are repetitive and occasionally lack depth or specificity, and there are minor communication issues that slightly impact clarity."
+    },
+    "Experience Level": {
+        "question": "How does the candidate past experience align with the role?",
+        "description": "Review professional history, domain relevance, project exposure, and ability to leverage prior experience in this context.",
+        "initial_assessment": "The candidate demonstrates relevant experience with modern engineering practices such as CI/CD pipelines, integration testing, microservices, and both Python and TypeScript. They have hands-on exposure to system design for high-traffic environments, including autoscaling, rate limiting, and incident response. The candidate also shows experience mentoring junior engineers and introducing best practices like pair programming. Their approach to problem-solving, measurement, and postmortems aligns with industry standards. However, there are some inconsistencies in the stated years of experience and occasional communication gaps, which slightly lower the confidence."
+    },
+    "Cultural Fit": {
+        "question": "How well does the candidate align with the company culture and values?",
+        "description": "Assess alignment with organizational principles, collaboration style, motivation, and long-term fit with the company environment.",
+        "initial_assessment": "The candidate demonstrates strong alignment with company culture and values, particularly around collaboration, transparency, and continuous improvement. They consistently mention mentoring junior engineers, introducing pair programming, and documenting findings for team knowledge sharing, which reflects a collaborative and supportive work style. Their emphasis on clear processes, measurement-driven decisions, and postmortems with action items shows a commitment to accountability and learning from mistakes. The candidate also communicates tradeoffs explicitly to stakeholders, indicating openness and effective communication. Their motivation appears high, as they proactively seek feedback, refactor code, and express curiosity about team practices and celebrations, suggesting a genuine interest in long-term fit and growth within the company environment."
+    }
+}
