@@ -21,4 +21,6 @@ llama_index,
 
 1. Add environment variable OPENAI_API_KEY_HTEC with the api key for HTEC LiteLLM
 
+2. run
+
 ```python main.py```
